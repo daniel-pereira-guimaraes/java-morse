@@ -48,30 +48,31 @@ This project contains a Jenkinsfile, which can be used to create a pipeline in J
 
 ### Configuring DockerHub Credentials
 
-1. Go to **Dashboard** > **Manage Jenkins** > **Security** > **Credentials**.
-2. Click on `(global)` in the Domain column.
-3. Click on the **[Add Credentials]** button.
-4. Enter your DockerHub credentials in the **[Username]** and **[Password]** fields.
-5. Enter `"docker-credentials"` in the **[ID]** field.
-6. Enter `"DockerHub credentials"` in the **[Description]** field.
-7. Click the **[Create]** button.
++ Go to **Dashboard** > **Manage Jenkins** > **Security** > **Credentials**.
++ Click on **(global)** in the Domain column.
++ Click on the **Add Credentials** button.
++ Enter your DockerHub credentials in the **Username** and **Password** fields.
++ Enter `"docker-credentials"` in the **ID** field.
++ Enter `"DockerHub credentials"` in the **Description** field.
++ Click the **Create** button.
 
 ### Configuring GitHub Credentials
 
-1. Go to **Dashboard** > **Manage Jenkins** > **Security** > **Credentials**.
-2. Click on `(global)` in the Domain column.
-3. Click on the **[Add Credentials]** button.
-4. Enter your GitHub credentials in the **[Username]** and **[Password]** fields.
-5. Enter `"github-credentials"` in the **[ID]** field.
-6. Enter `"GitHub credentials"` in the **[Description]** field.
-7. Click the **[Create]** button.
++ Go to **Dashboard** > **Manage Jenkins** > **Security** > **Credentials**.
++ Click on **(global)** in the **Domain** column.
++ Click on the **Add Credentials** button.
++ Enter your GitHub credentials in the **Username** and **Password** fields.
++ Enter `"github-credentials"` in the **ID** field.
++ Enter `"GitHub credentials"` in the **Description** field.
++ Click the **Create** button.
 
 ## Creating a Pipeline
 
-1. Go to **Dashboard** > **New Item**.
-2. Enter an item name (e.g., `java-morse`).
-3. Click the **OK** button.
-4. Scroll to **[Pipeline]**.
-5. Select **[Pipeline script from SCM]** in the **[Definition]** field.
-6. Select **[Git]** in the **[SCM]** field.
-7. Enter the GitHub repository URL in the **[Repository URL]** field (e.g., `https://github.com/daniel-pereira-guimaraes/j
++ Go to **Dashboard** > **New Item**.
++ Enter an item name (e.g., **java-morse**).
++ Click the **OK** button.
++ Scroll to **Pipeline**.
++ Select **Pipeline script from SCM** in the **Definition** field.
++ Select **Git** in the **SCM** field.
++ Enter the GitHub repository URL in the **Repository URL** field:
+  `https://github.com/daniel-pereira-guimaraes/java-morse`
