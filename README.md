@@ -13,6 +13,7 @@ The main objective of this project is to demonstrate the creation of a **Jenkins
 ## Technologies
 - Java
 - Spring Boot
+- JUnit5
 - Maven
 - Docker
 - Jenkins
