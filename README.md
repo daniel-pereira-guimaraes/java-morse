@@ -53,7 +53,7 @@ The main objective of this project is to demonstrate the creation of a **Jenkins
 
 This project contains a Jenkinsfile, which can be used to create a pipeline in Jenkins as per the following topics.
 
-### Configuring DockerHub Credentials
+### Configuring DockerHub credentials
 
 + Go to **Dashboard** > **Manage Jenkins** > **Security** > **Credentials**.
 + Click on **(global)** in the Domain column.
@@ -63,7 +63,7 @@ This project contains a Jenkinsfile, which can be used to create a pipeline in J
 + Enter `"DockerHub credentials"` in the **Description** field.
 + Click the **Create** button.
 
-### Configuring GitHub Credentials
+### Configuring GitHub credentials
 
 + Go to **Dashboard** > **Manage Jenkins** > **Security** > **Credentials**.
 + Click on **(global)** in the **Domain** column.
