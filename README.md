@@ -8,7 +8,7 @@ The main objective of this project is to demonstrate the creation of a **Jenkins
 + **Build Application:** executes build and tests of the java-morse application.
 + **Build Docker Image:** builds a Docker image with the java-morse application.
 + **Build Docker Push:** uploads the image to **Docker Hub**.
-+ **Cleanup:** Deletes temporary files and docker image.
++ **Declarative: Post Actions:** Deletes temporary files and docker image.
   
 ## API Endpoints
 
