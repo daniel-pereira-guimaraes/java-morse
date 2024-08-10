@@ -49,7 +49,7 @@ The main objective of this project is to demonstrate the creation of a **Jenkins
     I LOVE JAVA
     ```
 
-## Jenkins Configuration Guide
+## Jenkins configurations
 
 This project contains a Jenkinsfile, which can be used to create a pipeline in Jenkins as per the following topics.
 
