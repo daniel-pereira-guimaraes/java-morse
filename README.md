@@ -11,12 +11,17 @@ The main objective of this project is to demonstrate the creation of a **Jenkins
 + **Declarative: Post Actions:** Deletes temporary files and docker image.
 
 ## Technologies
-- Java
-- Spring Boot
-- JUnit5
-- Maven
-- Docker
-- Jenkins
++ Java
++ Spring Boot
++ JUnit5
++ Maven
++ Docker
++ Jenkins
+
+## Prerequisites
++ Windows (for Linux requires adaptations of the Jenkinsfile)
++ Java JDK 21
++ Maven
 
 ## Images
 
