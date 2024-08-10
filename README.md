@@ -76,3 +76,7 @@ This project contains a Jenkinsfile, which can be used to create a pipeline in J
 + Select **Git** in the **SCM** field.
 + Enter the GitHub repository URL in the **Repository URL** field (`https://github.com/daniel-pereira-guimaraes/java-morse`).
   ```
+
+## License
+
+- This project is licensed under the [MIT License](https://opensource.org/licenses/MIT). You are free to use, modify, and distribute the code as long as you include the original copyright notice and license in your documentation or credits.
