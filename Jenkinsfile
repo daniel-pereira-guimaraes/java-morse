@@ -9,7 +9,7 @@ pipeline {
     stage('Prepare') {
       steps {
         checkout scm
-        withCredentials([usernamePassword(credentialsId: 'docker-login', usernameVariable: 'DOCKER_USER', passwordVariable: 'DOCKER_PASSWORD')]) {
+        withCredentials([usernamePassword(credentialsId: 'docker-credentials', usernameVariable: 'DOCKER_USER', passwordVariable: 'DOCKER_PASSWORD')]) {
           script {
             env.DOCKER_USER = env.DOCKER_USER
             env.DOCKER_PASSWORD = env.DOCKER_PASSWORD
