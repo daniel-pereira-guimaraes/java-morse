@@ -60,9 +60,4 @@ public class MorseTest {
         assertEquals("AB", text);
     }
 
-    @Test
-    void toTestInJenkins() {
-        fail();
-    }
-
 }
