@@ -74,5 +74,5 @@ This project contains a Jenkinsfile, which can be used to create a pipeline in J
 + Scroll to **Pipeline**.
 + Select **Pipeline script from SCM** in the **Definition** field.
 + Select **Git** in the **SCM** field.
-+ Enter the GitHub repository URL in the **Repository URL** field:
-  `https://github.com/daniel-pereira-guimaraes/java-morse`
++ Enter the GitHub repository URL in the **Repository URL** field (`https://github.com/daniel-pereira-guimaraes/java-morse`).
+  ```
