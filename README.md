@@ -17,6 +17,11 @@ The main objective of this project is to demonstrate the creation of a **Jenkins
 - Maven
 - Docker
 - Jenkins
+
+## Images
+
+![Jenkins pipeline](https://github.com/daniel-pereira-guimaraes/java-morse/blob/main/images/jenkins.png)
+![Jenkins pipeline](https://github.com/daniel-pereira-guimaraes/java-morse/blob/main/images/postman.png)
   
 ## API Endpoints
 
