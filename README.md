@@ -9,6 +9,13 @@ The main objective of this project is to demonstrate the creation of a **Jenkins
 + **Build Docker Image:** builds a Docker image with the java-morse application.
 + **Build Docker Push:** uploads the image to **Docker Hub**.
 + **Declarative: Post Actions:** Deletes temporary files and docker image.
+
+## Technologies
+- Java
+- Spring Boot
+- Maven
+- Docker
+- Jenkins
   
 ## API Endpoints
 
