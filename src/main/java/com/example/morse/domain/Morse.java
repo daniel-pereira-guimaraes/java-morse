@@ -5,50 +5,49 @@ import java.util.Map;
 
 public class Morse {
 
-    private static final Map<Character, String> TEXT_TO_MORSE = new HashMap<>();
-    private static final Map<String, Character> MORSE_TO_TEXT = new HashMap<>();
+    private static final Map<Character, String> TEXT_TO_MORSE =
+            new MapBuilder<Character, String>(new HashMap<>())
+                    .put('A', ".-")
+                    .put('B', "-...")
+                    .put('C', "-.-.")
+                    .put('D', "-..")
+                    .put('E', ".")
+                    .put('F', "..-.")
+                    .put('G', "--.")
+                    .put('H', "....")
+                    .put('I', "..")
+                    .put('J', ".---")
+                    .put('K', "-.-")
+                    .put('L', ".-..")
+                    .put('M', "--")
+                    .put('N', "-.")
+                    .put('O', "---")
+                    .put('P', ".--.")
+                    .put('Q', "--.-")
+                    .put('R', ".-.")
+                    .put('S', "...")
+                    .put('T', "-")
+                    .put('U', "..-")
+                    .put('V', "...-")
+                    .put('W', ".--")
+                    .put('X', "-..-")
+                    .put('Y', "-.--")
+                    .put('Z', "--..")
+                    .put('1', ".----")
+                    .put('2', "..---")
+                    .put('3', "...--")
+                    .put('4', "....-")
+                    .put('5', ".....")
+                    .put('6', "-....")
+                    .put('7', "--...")
+                    .put('8', "---..")
+                    .put('9', "----.")
+                    .put('0', "-----")
+                    .put(' ', "/")
+                    .build();
 
-    static {
-        TEXT_TO_MORSE.put('A', ".-");
-        TEXT_TO_MORSE.put('B', "-...");
-        TEXT_TO_MORSE.put('C', "-.-.");
-        TEXT_TO_MORSE.put('D', "-..");
-        TEXT_TO_MORSE.put('E', ".");
-        TEXT_TO_MORSE.put('F', "..-.");
-        TEXT_TO_MORSE.put('G', "--.");
-        TEXT_TO_MORSE.put('H', "....");
-        TEXT_TO_MORSE.put('I', "..");
-        TEXT_TO_MORSE.put('J', ".---");
-        TEXT_TO_MORSE.put('K', "-.-");
-        TEXT_TO_MORSE.put('L', ".-..");
-        TEXT_TO_MORSE.put('M', "--");
-        TEXT_TO_MORSE.put('N', "-.");
-        TEXT_TO_MORSE.put('O', "---");
-        TEXT_TO_MORSE.put('P', ".--.");
-        TEXT_TO_MORSE.put('Q', "--.-");
-        TEXT_TO_MORSE.put('R', ".-.");
-        TEXT_TO_MORSE.put('S', "...");
-        TEXT_TO_MORSE.put('T', "-");
-        TEXT_TO_MORSE.put('U', "..-");
-        TEXT_TO_MORSE.put('V', "...-");
-        TEXT_TO_MORSE.put('W', ".--");
-        TEXT_TO_MORSE.put('X', "-..-");
-        TEXT_TO_MORSE.put('Y', "-.--");
-        TEXT_TO_MORSE.put('Z', "--..");
-        TEXT_TO_MORSE.put('1', ".----");
-        TEXT_TO_MORSE.put('2', "..---");
-        TEXT_TO_MORSE.put('3', "...--");
-        TEXT_TO_MORSE.put('4', "....-");
-        TEXT_TO_MORSE.put('5', ".....");
-        TEXT_TO_MORSE.put('6', "-....");
-        TEXT_TO_MORSE.put('7', "--...");
-        TEXT_TO_MORSE.put('8', "---..");
-        TEXT_TO_MORSE.put('9', "----.");
-        TEXT_TO_MORSE.put('0', "-----");
-        TEXT_TO_MORSE.put(' ', "/");
-
-        TEXT_TO_MORSE.forEach((k,v) -> MORSE_TO_TEXT.put(v,k));
-    }
+    private static final Map<String, Character> MORSE_TO_TEXT =
+            new MapBuilder<>(TEXT_TO_MORSE).buildReversed();
 
     public static String toMorse(String text) {
         var morse = new StringBuilder();

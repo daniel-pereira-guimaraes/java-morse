@@ -1,8 +1,9 @@
 package com.example.morse.domain;
 
 import com.example.morse.fixture.MorseFixture;
-import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
+
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class MorseTest {
 
@@ -12,7 +13,7 @@ public class MorseTest {
 
         var morse = Morse.toMorse(text);
 
-        Assertions.assertEquals(MorseFixture.MORSE_CODES, morse);
+        assertEquals(MorseFixture.MORSE_CODES, morse);
     }
 
     @Test
@@ -21,7 +22,7 @@ public class MorseTest {
 
         var morse = Morse.toMorse(text);
 
-        Assertions.assertEquals(MorseFixture.MORSE_CODES, morse);
+        assertEquals(MorseFixture.MORSE_CODES, morse);
     }
 
     @Test
@@ -30,14 +31,14 @@ public class MorseTest {
 
         var morse = Morse.toMorse(text);
 
-        Assertions.assertEquals(".-", morse);
+        assertEquals(".-", morse);
     }
 
     @Test
     void toTextMustReturnsMorseAsText() {
         var text = Morse.toText(MorseFixture.MORSE_CODES);
 
-        Assertions.assertEquals(MorseFixture.TEXT_CHARS, text);
+        assertEquals(MorseFixture.TEXT_CHARS, text);
     }
 
     @Test
@@ -46,7 +47,7 @@ public class MorseTest {
 
         var text = Morse.toText(morse);
 
-        Assertions.assertEquals("AB", text);
+        assertEquals("AB", text);
     }
 
     @Test
@@ -55,7 +56,7 @@ public class MorseTest {
 
         var text = Morse.toText(morse);
 
-        Assertions.assertEquals("AB", text);
+        assertEquals("AB", text);
     }
 
 }
